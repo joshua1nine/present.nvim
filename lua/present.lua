@@ -73,7 +73,7 @@ M.setup = function(opts)
 	opts.executors = opts.executors or {}
 
 	opts.executors.lua = opts.executors.lua or execute_lua_code
-	opts.executors.lua = opts.executors.javascript or M.create_system_executor("node")
+	opts.executors.javascript = opts.executors.javascript or M.create_system_executor("node")
 
 	options = opts
 end
